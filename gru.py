@@ -74,7 +74,7 @@ if __name__ == '__main__':
     test_x_tensor = test_x.reshape(-1, 1, INPUT_FEATURES_NUM)
 
 
-    gru_model = GruRNN(INPUT_FEATURES_NUM, 101, output_size=OUTPUT_FEATURES_NUM, num_layers=3)  
+    gru_model = Gru(INPUT_FEATURES_NUM, 101, output_size=OUTPUT_FEATURES_NUM, num_layers=3)  
     print('GRU model:', gru_model)
     print('model.parameters:', gru_model.parameters)
     print('train x tensor dimension:', Variable(train_x_tensor).size())
